@@ -1,0 +1,6 @@
+require "base_extensions/active_record_extension"
+require "base_extensions/array_extension"
+require "base_extensions/class_extension"
+require "base_extensions/integer_extension"
+require "base_extensions/float_extension"
+require "base_extensions/string_extension"

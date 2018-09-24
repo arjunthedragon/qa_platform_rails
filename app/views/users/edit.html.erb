@@ -1,0 +1,33 @@
+<div style="width: 100%; float: left; padding-left: 30px; padding-right: 30px;">
+  <h2>Edit User</h2>
+
+  <%= simple_form_for(@user, url: user_path(@user), method: :put) do |f| %>
+    <%= f.error_notification %>
+    <ul>
+      <% if f.object.errors.any? %>
+        <% f.object.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      <% end %>
+    </ul>
+
+    <div class="form-inputs">
+      <%= f.object.email %>
+      <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+      <%= f.input :password_confirmation, required: true %>
+      <%= f.input :phone_number, required: true %>
+
+      <% f.object.profile || f.object.build_profile %>
+      <%= f.simple_fields_for :profile do |p| %>
+        <%= p.input :first_name %>
+        <%= p.input :last_name %>
+        <%= p.input :dob, as: :date, start_year: Date.today.year - 90, end_year: Date.today.year %>
+        
+      <% end %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, "Update" %>
+    </div>
+  <% end %>
+</div>

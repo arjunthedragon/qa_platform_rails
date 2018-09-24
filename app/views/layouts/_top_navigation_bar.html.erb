@@ -1,0 +1,43 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Q / A Platform App</a>
+    </div>
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="modal fade" id="signin_popup">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Sign In</div>
+      </div>
+      <div class="modal-body">
+        <form ng-controller="signInCtrl as ctrl" ng-submit="ctrl.signIn()" novalidate>
+          <div class="form-group">
+            <label for="inputEmail">Email Address</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" ng-model="ctrl.credentials.email">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="ctrl.credentials.password">
+          </div>
+          <input type="submit" class="btn btn-default" value="Sign In" />
+        </form>
+
+        <div>
+          <a href="/users/auth/facebook" class="btn btn-block btn-social btn-facebook" target="_self"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
+          <a href="/users/auth/google_oauth2" class="btn btn-block btn-social btn-google" target="_self"><i class="fa fa-google"></i>Sign in with Google</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

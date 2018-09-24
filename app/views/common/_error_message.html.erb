@@ -1,0 +1,9 @@
+<% if (message && title).present? %>
+  <div class="alert alert-danger alert-error col-xs-12 pull-left" style="margin-top: 20px;">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    <strong>Error! - <%= title %></strong>
+    <ul>
+      <%= message %>
+    </ul>
+  </div>
+<% end %>

@@ -1,0 +1,22 @@
+<div class="modal fade" id="sample-id">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <div class="modal-title">
+          <b>My Title</b>
+          <a href="#sample-id" data-toggle="modal" class="glyphicon glyphicon-remove pull-right"></a>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div>This is a sample model popup. Copy this in to a new file and edit as you need</div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn btn-success pu;;-right">OK</div>
+        <a href="#sample-id" data-toggle="modal" class="pull-right btn btn-info" style="margin-right: 10px">Cancel</a>
+      </div>
+    </div>
+  </div>
+</div>

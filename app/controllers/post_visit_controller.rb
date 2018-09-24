@@ -1,0 +1,2 @@
+class PostVisitController < ApplicationController
+end

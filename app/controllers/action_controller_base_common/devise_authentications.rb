@@ -1,0 +1,4 @@
+module ActionControllerBaseCommon::DeviseAuthentications
+
+
+end

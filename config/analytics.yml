@@ -1,0 +1,8 @@
+development:
+  tracking_id: UA-48113199-2
+
+test:
+  tracking_id: test-tracking-id-here
+
+production:
+  tracking_id: production-tracking-id-here

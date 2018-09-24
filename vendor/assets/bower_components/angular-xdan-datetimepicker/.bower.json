@@ -1,0 +1,46 @@
+{
+  "name": "angular-xdan-datetimepicker",
+  "version": "1.0.2",
+  "homepage": "https://github.com/tyaslab/angular-xdan-datetimepicker",
+  "description": "Angular Directive for xdan/datetimepicker",
+  "main": "datetimepicker.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "xdan",
+    "xdsoft",
+    "datetimepicker",
+    "angular",
+    "datepicker",
+    "timepicker"
+  ],
+  "authors": [
+    {
+      "name": "Yusuf Ali",
+      "email": "tyaslab.com@gmail.com",
+      "homepage": "http://tyaslab.com"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "datetimepicker": "~2.4.1",
+    "angular": "~1.3.13"
+  },
+  "_release": "1.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.2",
+    "commit": "11f10a394a986745e67d1321b9aa1b7e9f058840"
+  },
+  "_source": "https://github.com/tyaslab/angular-xdan-datetimepicker.git",
+  "_target": "*",
+  "_originalSource": "angular-xdan-datetimepicker"
+}
