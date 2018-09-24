@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resource :static_pages, only: [] do
     collection do
       get :home
+      get :render_api_doc_pdf
     end
   end
 
