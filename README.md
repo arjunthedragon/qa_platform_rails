@@ -13,3 +13,5 @@ The Following systems supports the following
 To get complete details
 
 http://ec2-13-232-14-215.ap-south-1.compute.amazonaws.com/home/render_api_doc_pdf
+
+This Repository is licensed under the GNU General Public License v3.0
